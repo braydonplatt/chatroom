@@ -8,7 +8,8 @@ app.service('parseService', function($http){
   //Be sure to return whatever gets returned from $http so you can call .then in your controller.
  
 this.getData = function(){
-  return $http.get('https://api.parse.com/1/classes/chat?order=-createdAt');
+  //return $http.get('https://api.parse.com/1/classes/chat?order=-createdAt');
+  return $http.get('https://api.parse.com/1/classes/braydon?order=-createdAt');
 };
 
 
@@ -25,7 +26,8 @@ this.getData = function(){
   
   //postData method here
   this.postData = function(yourMessage){
-    return $http.post('https://api.parse.com/1/classes/chat', {text: yourMessage});
+    debugger;
+    return $http.post('https://api.parse.com/1/classes/braydon', {text: yourMessage});
   };
   
   //getData method here
