@@ -8,40 +8,101 @@ body {
   width: 100%;
   font-family: sans-serif;
   background: #fff;
+  display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
 }
 
+.chat-header{
+  height: 200px;
+  width: 100%;
+  background: #ccc;
+  box-shadow: 0 0px 5px rgba(75,75,75,.9);
+  background: url(http://i306.photobucket.com/albums/nn261/mickleigh11/DevMountain/ChatRoom_zpsrnlbxgbg.jpg) no-repeat;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+
+}
+
+.chat-header, .main, .nav, .aside, .footer {
+  flex:
+}
 .main-container {
   width: 75%;
-  margin: 10px auto;
+  height: 100%;
+  margin: 100px auto;
   background: rgba(255, 255, 255, 0.86);
   padding: 5px;
   border-radius: 4px;
-  box-shadow: 0 0px 5px rgba(0,0,0,.5);
+  flex-flow: row wrap;
 }
+
 
 .main-container h1 {
   text-align: center;
+  font-family: 'Raleway', 'sans-serif';
 }
+.filter {
+  margin: 0px auto;
+   margin-left: 38%;
+   margin-top: 8px;
+   margin-bottom: 20px;
+  }
 
+.messages-container {
+  margin-top: 10px;
+  overflow: auto;
+  box-shadow: 0 0px 5px rgba(64,74,136,.5);
+  padding-bottom: 20px;
+}
 .text-box {
   margin: 0px auto;
   width: 40%;
+  }
+
+h1 {
+  display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
 }
 
-
 p{
-  text-align: center;
+  text-align: wrap;
   margin: 3px 0;
-  font-size: 17px;
+  font-size: 15px;
+  font-family: 'Raleway';
+  padding-left: 10px;
 }
 
 .filter {
   margin: 0px auto;
-   margin-left: 42%;
+   margin-left: 38%;
    margin-top: 8px;
-   margin-bottom: 8px;
+   margin-bottom: 20px;
   }
 
 .badge {
   background-color: #66c3d1;
+  text-align: right;
+
 }
